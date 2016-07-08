@@ -5,8 +5,6 @@ html, body {
 }
 
 .sidebar {
-  @extend .xs-12;
-  @extend .sm-12;
   @extend .md-4;
   @extend .lg-4;
   @extend .xl-4;
