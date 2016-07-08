@@ -1,5 +1,5 @@
 @mixin gridColumn($breakpoint, $columnNumber) {
-  &.#{$breakpoint}-#{$columnNumber} {
+  &.g-#{$breakpoint}-#{$columnNumber} {
     > * {
       width: #{percentage(1 / $columnNumber)};
     }

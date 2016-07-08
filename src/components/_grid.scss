@@ -1,33 +1,36 @@
-.row {
+.grid {
   @include clearfix;
   > * {
     box-sizing: border-box;
-    display: none;
+    display: block;
     float: left;
+  }
+  > *:nth-of-type(1n) {
+    clear: none;
   }
   @include xs {
     @for $columnNumber from 1 through $gridMaxColumns {
-      @include layoutGridColumn(xs, $columnNumber);
+      @include gridColumn(xs, $columnNumber);
     }
   }
   @include sm {
     @for $columnNumber from 1 through $gridMaxColumns {
-      @include layoutGridColumn(sm, $columnNumber);
+      @include gridColumn(sm, $columnNumber);
     }
   }
   @include md {
     @for $columnNumber from 1 through $gridMaxColumns {
-      @include layoutGridColumn(md, $columnNumber);
+      @include gridColumn(md, $columnNumber);
     }
   }
   @include lg {
     @for $columnNumber from 1 through $gridMaxColumns {
-      @include layoutGridColumn(lg, $columnNumber);
+      @include gridColumn(lg, $columnNumber);
     }
   }
   @include xl {
     @for $columnNumber from 1 through $gridMaxColumns {
-      @include layoutGridColumn(xl, $columnNumber);
+      @include gridColumn(xl, $columnNumber);
     }
   }
 }

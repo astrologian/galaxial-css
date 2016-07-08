@@ -1,0 +1,47 @@
+@import "../src/glxl-main";
+
+html, body {
+  font-family: sans-serif;
+}
+
+.sidebar {
+  @extend .xs-12;
+  @extend .sm-12;
+  @extend .md-4;
+  @extend .lg-4;
+  @extend .xl-4;
+}
+
+.content-grid {
+  @extend .xs-12;
+  @extend .sm-12;
+  @extend .md-8;
+  @extend .lg-8;
+  @extend .xl-8;
+  @extend .grid;
+  @extend .g-xs-1;
+  @extend .g-sm-2;
+  @extend .g-md-4;
+  @extend .g-lg-4;
+  @extend .g-xl-4;
+}
+
+.row {
+  > * {
+    background-color: #D46A6A;
+    padding: 10px 20px;
+  }
+  > *:nth-of-type(2n+1) {
+    background-color: #FFAAAA;
+  }
+}
+
+.grid {
+  > * {
+    background-color: #7CAC5C;
+    padding: 10px 20px;
+  }
+  > *:nth-of-type(2n+1) {
+    background-color: #A4C290;
+  }
+}
