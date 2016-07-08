@@ -1,0 +1,13 @@
+$breakpoints: xs, sm, md, lg, xl;
+
+$xl-min: 75em;
+$lg-max: $xl-min - 0.1;
+$lg-min: 62em;
+$md-max: $lg-min - 0.1;
+$md-min: 48em;
+$sm-max: $md-min - 0.1;
+$sm-min: 34em;
+
+$layoutGridMaxColumns: 12;
+$gridMaxColumns: 12;
+$gridGutter: 15px;

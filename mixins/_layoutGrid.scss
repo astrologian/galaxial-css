@@ -1,0 +1,6 @@
+@mixin layoutGridColumn($breakpoint, $columnNumber) {
+  > .#{$breakpoint}-#{$columnNumber} {
+    display: block;
+    width: #{percentage($columnNumber / $layoutGridMaxColumns)};
+  }
+}

@@ -1,0 +1,33 @@
+.row {
+  @include clearfix;
+  > * {
+    box-sizing: border-box;
+    display: none;
+    float: left;
+  }
+  @include xs {
+    @for $columnNumber from 1 through $gridMaxColumns {
+      @include layoutGridColumn(xs, $columnNumber);
+    }
+  }
+  @include sm {
+    @for $columnNumber from 1 through $gridMaxColumns {
+      @include layoutGridColumn(sm, $columnNumber);
+    }
+  }
+  @include md {
+    @for $columnNumber from 1 through $gridMaxColumns {
+      @include layoutGridColumn(md, $columnNumber);
+    }
+  }
+  @include lg {
+    @for $columnNumber from 1 through $gridMaxColumns {
+      @include layoutGridColumn(lg, $columnNumber);
+    }
+  }
+  @include xl {
+    @for $columnNumber from 1 through $gridMaxColumns {
+      @include layoutGridColumn(xl, $columnNumber);
+    }
+  }
+}

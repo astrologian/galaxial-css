@@ -1,0 +1,12 @@
+@mixin gridColumn($breakpoint, $columnNumber) {
+  &.#{$breakpoint}-#{$columnNumber} {
+    > * {
+      width: #{percentage(1 / $columnNumber)};
+    }
+    > *:nth-of-type(#{$columnNumber}n+1) { // Первый элемент строки
+      clear: both;
+    }
+    > *:nth-of-type(#{$columnNumber}n+#{$columnNumber}) { // Последний элемент строки
+    }
+  }
+}
