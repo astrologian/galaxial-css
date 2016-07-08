@@ -5,6 +5,7 @@ html, body {
 }
 
 .sidebar {
+  // if xs-# and sm-# omitted, then sidebar is not visible on extra small and small screens
   @extend .md-4;
   @extend .lg-4;
   @extend .xl-4;
